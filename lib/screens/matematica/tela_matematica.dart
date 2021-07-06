@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/matematica/tela_nivel1_matematica.dart';
 
 class TelaMatematica extends StatelessWidget {
   const TelaMatematica({Key? key}) : super(key: key);
@@ -34,12 +35,12 @@ class TelaMatematica extends StatelessWidget {
                 ),
                 child: new InkWell(
                   onTap: () {
-                    /*Navigator.push(
+                    Navigator.push(
                       context,
                       MaterialPageRoute( 
-                        builder: (BuildContext context) => ,
+                        builder: (BuildContext context) => MatematicaNivel1(),
                       ),
-                    );*/
+                    );
                   },
                   child: Container(
                     padding: EdgeInsets.all(10.0),

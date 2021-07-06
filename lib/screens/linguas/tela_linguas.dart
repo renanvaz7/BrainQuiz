@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/linguas/tela_nivel1_linguas.dart';
 
 class TelaLinguas extends StatelessWidget {
   const TelaLinguas({Key? key}) : super(key: key);
@@ -34,12 +35,12 @@ class TelaLinguas extends StatelessWidget {
                 ),
                 child: new InkWell(
                   onTap: () {
-                    /*Navigator.push(
+                    Navigator.push(
                       context,
                       MaterialPageRoute( 
-                        builder: (BuildContext context) => GeografiaNivel1(),
+                        builder: (BuildContext context) => LinguasNivel1(),
                       ),
-                    );*/
+                    );
                   },
                   child: Container(
                     padding: EdgeInsets.all(10.0),
