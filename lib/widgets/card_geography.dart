@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screens/tela_geografia.dart';
+import 'package:flutter_application_1/screens/geografia/tela_geografia.dart';
 
 class CardGeografiaWidget extends StatefulWidget {
   CardGeografiaWidget({Key? key}) : super(key: key);

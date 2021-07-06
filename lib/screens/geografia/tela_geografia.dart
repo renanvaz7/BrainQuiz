@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/geografia/tela_nivel1_geografia.dart';
 
-class TelaLinguas extends StatelessWidget {
-  const TelaLinguas({Key? key}) : super(key: key);
+class TelaGeografia extends StatelessWidget {
+  const TelaGeografia({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class TelaLinguas extends StatelessWidget {
             ),
           ),
         ),
-        title: Text('Línguas'),
+        title: Text('Geografia'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -30,17 +31,24 @@ class TelaLinguas extends StatelessWidget {
             children: [
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute( 
+                        builder: (BuildContext context) => GeografiaNivel1(),
+                      ),
+                    );
+                  },
                   child: Container(
                     padding: EdgeInsets.all(10.0),
                     child: Column(
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -53,10 +61,10 @@ class TelaLinguas extends StatelessWidget {
                   ),
                 ),
               ),
-              //Fim card Georgafia
+              // Card 2
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -66,7 +74,7 @@ class TelaLinguas extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -79,10 +87,10 @@ class TelaLinguas extends StatelessWidget {
                   ),
                 ),
               ),
-              //Fim card Línguas
+              //Card 3
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -92,7 +100,7 @@ class TelaLinguas extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -105,15 +113,15 @@ class TelaLinguas extends StatelessWidget {
                   ),
                 ),
               ),
-              //Fim card Matemática
-            ], //Fim Linha 1
+            ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              //Card 4
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -123,7 +131,7 @@ class TelaLinguas extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -136,9 +144,10 @@ class TelaLinguas extends StatelessWidget {
                   ),
                 ),
               ),
+              //Card 5
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -148,7 +157,7 @@ class TelaLinguas extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -161,9 +170,10 @@ class TelaLinguas extends StatelessWidget {
                   ),
                 ),
               ),
+              //Card 6
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -173,7 +183,7 @@ class TelaLinguas extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -190,11 +200,11 @@ class TelaLinguas extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              //Card 7
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -204,7 +214,7 @@ class TelaLinguas extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -217,9 +227,10 @@ class TelaLinguas extends StatelessWidget {
                   ),
                 ),
               ),
+              // Card 8
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -229,7 +240,7 @@ class TelaLinguas extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -242,9 +253,10 @@ class TelaLinguas extends StatelessWidget {
                   ),
                 ),
               ),
+              //Card 9
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -254,7 +266,7 @@ class TelaLinguas extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -268,8 +280,7 @@ class TelaLinguas extends StatelessWidget {
                 ),
               ),
             ],
-          ),
-          //Fim da Linha 3                  
+          ), 
         ],
       ),
     );

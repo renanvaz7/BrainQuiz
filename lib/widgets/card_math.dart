@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screens/tela_matematica.dart';
+import 'package:flutter_application_1/screens/matematica/tela_matematica.dart';
 
 class CardMatematicaWidget extends StatefulWidget {
   CardMatematicaWidget({Key? key}) : super(key: key);

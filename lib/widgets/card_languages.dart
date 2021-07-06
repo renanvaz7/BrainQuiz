@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screens/tela_linguas.dart';
+import 'package:flutter_application_1/screens/linguas/tela_linguas.dart';
 
 class CardLinguasWidget extends StatefulWidget {
   CardLinguasWidget({Key? key}) : super(key: key);

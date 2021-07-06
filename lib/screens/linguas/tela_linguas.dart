@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class TelaMatematica extends StatelessWidget {
-  const TelaMatematica({Key? key}) : super(key: key);
+class TelaLinguas extends StatelessWidget {
+  const TelaLinguas({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
       appBar: AppBar(
         flexibleSpace: Container(
           decoration: BoxDecoration(
@@ -20,7 +20,7 @@ class TelaMatematica extends StatelessWidget {
             ),
           ),
         ),
-        title: Text('Matemática'),
+        title: Text('Línguas'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -30,17 +30,24 @@ class TelaMatematica extends StatelessWidget {
             children: [
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
-                  ),
+                  borderRadius: BorderRadius.circular(20.0)
+                ),
                 child: new InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    /*Navigator.push(
+                      context,
+                      MaterialPageRoute( 
+                        builder: (BuildContext context) => GeografiaNivel1(),
+                      ),
+                    );*/
+                  },
                   child: Container(
                     padding: EdgeInsets.all(10.0),
                     child: Column(
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -53,11 +60,11 @@ class TelaMatematica extends StatelessWidget {
                   ),
                 ),
               ),
-              //Fim card Georgafia
+              // Card 2
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
-                  ),
+                  borderRadius: BorderRadius.circular(20.0)
+                ),
                 child: new InkWell(
                   onTap: () {},
                   child: Container(
@@ -66,7 +73,7 @@ class TelaMatematica extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -79,11 +86,11 @@ class TelaMatematica extends StatelessWidget {
                   ),
                 ),
               ),
-              //Fim card Línguas
+              //Card 3
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
-                  ),
+                  borderRadius: BorderRadius.circular(20.0)
+                ),
                 child: new InkWell(
                   onTap: () {},
                   child: Container(
@@ -92,7 +99,7 @@ class TelaMatematica extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -105,15 +112,15 @@ class TelaMatematica extends StatelessWidget {
                   ),
                 ),
               ),
-              //Fim card Matemática
-            ], //Fim Linha 1
+            ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              //Card 4
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -123,7 +130,7 @@ class TelaMatematica extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -136,9 +143,10 @@ class TelaMatematica extends StatelessWidget {
                   ),
                 ),
               ),
+              //Card 5
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -148,7 +156,7 @@ class TelaMatematica extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -161,9 +169,10 @@ class TelaMatematica extends StatelessWidget {
                   ),
                 ),
               ),
+              //Card 6
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -173,7 +182,7 @@ class TelaMatematica extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -190,11 +199,11 @@ class TelaMatematica extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              //Card 7
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -204,7 +213,7 @@ class TelaMatematica extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -217,9 +226,10 @@ class TelaMatematica extends StatelessWidget {
                   ),
                 ),
               ),
+              // Card 8
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -229,7 +239,7 @@ class TelaMatematica extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -242,9 +252,10 @@ class TelaMatematica extends StatelessWidget {
                   ),
                 ),
               ),
+              //Card 9
               Card(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0)
+                  borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: new InkWell(
                   onTap: () {},
@@ -254,7 +265,7 @@ class TelaMatematica extends StatelessWidget {
                       children: [
                         Image(
                           image: AssetImage("assets/images/Icon_trophy.png"),
-                          width: 120,
+                          width: 100,
                         ),
                         Divider(),
                         Text(
@@ -268,8 +279,7 @@ class TelaMatematica extends StatelessWidget {
                 ),
               ),
             ],
-          ),
-          //Fim da Linha 3                  
+          ), 
         ],
       ),
     );
