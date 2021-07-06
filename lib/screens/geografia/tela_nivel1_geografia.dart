@@ -318,7 +318,12 @@ class _GeografiaNivel1State extends State<GeografiaNivel1> {
                   textStyle: const TextStyle(fontSize: 20),
                   backgroundColor: Colors.white,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  if(_escolhaUsuario1	== 3) {
+                    setState(() {
+                    });
+                  }
+                },
                 child: Text(
                   'Verificar',
                 ),
